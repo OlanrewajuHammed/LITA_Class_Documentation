@@ -12,7 +12,7 @@ Welcome to my Excel class portfolio! This repository showcases various projects 
 - Report and Dashboard in Excel
 
 ### Data Sources
-The source of data used are provided by the facilitator during the cource of learning.
+The source of data used are provided by the facilitator during the course of learning.
 
 ### Tools used
 #### Microsoft Excel [Download Here](https://www.microsoft.com)
@@ -23,5 +23,23 @@ The source of data used are provided by the facilitator during the cource of lea
   4. Pivot Tables
   5. Data Visualization and Creating Dashboard
 
-
-
+### Foundation of Data
+This phase serve as an insight to enhance our excel journey, we were introduced to the following:
+ 1. Data Literacy:
+   - Data Generation
+   - Data storage
+   - Data Stucture
+   - Statistic 
+   - Data Driven Decision Making
+ 2. Data Analysis Life Cycle
+   - Ingestion
+   - Transformation
+   - Modeling
+   - Analysis
+   - Presentation
+  
+### Introduction into Microsoft Excel
+This phase encompass the following action:
+1. Navigating Excel interphase
+2. Data loading and inspection
+3. 
