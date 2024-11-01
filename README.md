@@ -1,7 +1,6 @@
 # LITA_Excel_Class_Portfolio
-A collection of Excel projects during my Excel class. This repository highlights my proficiency in various Excel skills, from foundation of data to visualization.
 
-### Project Title: Basic Excel
+### Project Title: Basics of Microsoft Excel
 
 ### Project Overview
 Welcome to my Excel class portfolio! This repository showcases various projects and assignments completed during my Excel class, highlighting my proficiency in Excel skills and techniques. I started with learning foundational data literacy, which laid the groundwork for my understanding of data analysis and manipulation.
@@ -42,4 +41,21 @@ This phase serve as an insight to enhance our excel journey, we were introduced 
 This phase encompass the following action:
 1. Navigating Excel interphase
 2. Data loading and inspection
-3. 
+3. Handling missing variables
+4. Data cleaning and formatting
+
+### Basic Excel Function
+The aim of this phase was to perform data manipulation tasks in other to answer questions on different aggregate using different code. Functions used include;
+1. overall aggregate;
+ - Sum, Average, Max, Min, Count, CountA, Large, Small
+   ```=SUM(D8:D27)
+2. conditional funtions;
+   - Sumif(s), Averageif(s), Maxifs, Maxa , Minifs, Countif(s), If(s) 
+   ```=COUNTIF(C8:C27,C19)
+3. Data extraction and joining;
+   - Left, Mid, Right, Concatenate
+    ```=LEFT(B6,FIND(" ",B6))
+    ```=CONCATENATE(B16&" "&C16)
+4. 
+4. Data retrieval;
+   - Vlookup, Match, Xlookup, Index
