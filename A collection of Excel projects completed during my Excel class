@@ -2,9 +2,27 @@
 
 ### Project Title: Basics of Microsoft Excel
 
+[Project Overview](#project-overview)
+
+[Data Sources](#data-sources)
+
+[Tools used](#tools-used)
+
+[Foundation of Data](#foundation-of-data)
+
+[Introduction into Microsoft Excel](#introduction-into-microsoft-excel)
+
+[Basic Excel Function](#basic-excel-function)
+
+[Exploratory Data Analysis](#exploratory-data-analysis)
+
+[Report and Dashboard](#report-and-dashboard)
+
+[Summary](#summary)
+
 ### Project Overview
 ---
-Welcome to my Excel class portfolio! This repository showcases various projects and assignments completed during my Excel class, highlighting my proficiency in Excel skills and techniques. I started with learning foundational data literacy, which laid the groundwork for my understanding of data analysis and manipulation.
+Welcome to my Excel class portfolio! This repository is a collection of my work, demonstrating the growth of my Excel skills from basic data literacy to the creation of data visualizations. Each project includes analyses, visualizations, and documentation of the techniques used. I started with learning foundational data literacy, which laid the groundwork for my understanding of data analysis and manipulation. Explore the projects to see how I applied various Excel functions and features to uncover insights and create compelling visual representations of data.
 #### Content
 - Foundation of Data
 - Introduction into Microsoft Excel
@@ -78,8 +96,8 @@ The aim of this phase was to perform data manipulation tasks in other to answer 
 =VLOOKUP(Database!$E21,'Simple Salary Structure'!$B$8:$I$16,2,FALSE)
 ```
 
-### Exploratory Data Analysis(EDA)
-When delving into the analysis phase of EDA, we adopt a structured method to comprehend and extract insights from the data to address questions like:
+### Exploratory Data Analysis
+When delving into the analysis phase of Exploratory Data Analysis(EDA), we adopt a structured method to comprehend and extract insights from the data to address questions like:
 1. Overall sales trend
 2. Top selling product by specific region or market
 3. Monthly sales pattern
@@ -87,4 +105,13 @@ When delving into the analysis phase of EDA, we adopt a structured method to com
 
 ### Report and Dashboard
 This aspect summarizes our data, enabling us to to communicate the results of data analysis in a structured format using the pivot table, and display key performance indicators and metrics in a dynamic, interactive format using charts, graphs.
+
+![Screenshot (146)](https://github.com/user-attachments/assets/92ab1b63-a998-4cc7-be25-26e4ae432ef9)
+
+
+![Screenshot (130)](https://github.com/user-attachments/assets/e1ba4f14-85ef-4172-8e5d-05b1f16cc17a)
+
+### Summary
+This repository showcases various aspect completed during my Excel class, highlighting my proficiency in Excel skills and techniques. I began with learning foundational data literacy (Foundation of Data), which laid the groundwork for my understanding of data analysis and manipulation. The main source of data used in these projects was provided by the facilitator during the course of learning. This journey culminates in developing advanced dashboards for data visualization.
+
 
