@@ -47,6 +47,7 @@ This phase encompass the following action:
 4. Data cleaning and formatting
 
 ### Basic Excel Function
+#### Data Analysis
 The aim of this phase was to perform data manipulation tasks in other to answer questions on different aggregate using different code. Functions used include;
 1. overall aggregate;
  - Sum, Average, Max, Min, Count, CountA, Large, Small
@@ -76,6 +77,13 @@ The aim of this phase was to perform data manipulation tasks in other to answer 
 ```
 =VLOOKUP(Database!$E21,'Simple Salary Structure'!$B$8:$I$16,2,FALSE)
 ```
+
+### Exploratory Data Analysis(EDA)
+When delving into the analysis phase of EDA, we adopt a structured method to comprehend and extract insights from the data to address questions like:
+1. Overall sales trend
+2. Top selling product by specific region or market
+3. Monthly sales pattern
+4. Percentage of revenue generated from specific product by region
 
 ### Report and Dashboard
 This aspect summarizes our data, enabling us to to communicate the results of data analysis in a structured format using the pivot table, and display key performance indicators and metrics in a dynamic, interactive format using charts, graphs.
