@@ -24,7 +24,6 @@ The source of data used are provided by the facilitator during the course of lea
   5. Data Visualization and Creating Dashboard
 
 ### Foundation of Data
----
 This phase serve as an insight to enhance our excel journey, we were introduced to the following:
  1. Data Literacy:
    - Data Generation
@@ -77,3 +76,6 @@ The aim of this phase was to perform data manipulation tasks in other to answer 
 ```
 =VLOOKUP(Database!$E21,'Simple Salary Structure'!$B$8:$I$16,2,FALSE)
 ```
+
+### Report and Dashboard
+This aspect summarizes our data, enabling us to to communicate the results of data analysis in a structured format using the pivot table, and display key performance indicators and metrics in a dynamic, interactive format using charts, graphs.
