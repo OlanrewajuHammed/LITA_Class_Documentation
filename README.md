@@ -87,3 +87,4 @@ When delving into the analysis phase of EDA, we adopt a structured method to com
 
 ### Report and Dashboard
 This aspect summarizes our data, enabling us to to communicate the results of data analysis in a structured format using the pivot table, and display key performance indicators and metrics in a dynamic, interactive format using charts, graphs.
+
