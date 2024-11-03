@@ -51,7 +51,7 @@ The data used in these projects were sourced from a variety of locations includi
 - Sample datasets provided by course instructors
 - Publicly available datasets from online repositories
 - Synthetic data generated during tthe classes for learning purposes
-- Capstone dataset which include 
+- A Capstone dataset for my final project
 
 ### Tools used
 The tools used include 
@@ -63,7 +63,8 @@ The tools used include
    - Used for data visualization and dashboard creation.
 
 #### Excel
-Here our facilitator was able to take us through microsoft excel where we were able to navigate data
+---
+Here our facilitator took us through microsoft excel where we navigate the following context
 ##### Content
 - Foundation of Data
 - Introduction into Microsoft Excel
@@ -145,9 +146,10 @@ This aspect summarizes our data, enabling us to to communicate the results of da
 ![Screenshot (130)](https://github.com/user-attachments/assets/e1ba4f14-85ef-4172-8e5d-05b1f16cc17a)
 
 ### Summary
-This repository showcases various aspect completed during my Excel class, highlighting my proficiency in Excel skills and techniques. I began with learning foundational data literacy (Foundation of Data), which laid the groundwork for my understanding of data analysis and manipulation. The main source of data used in these projects was provided by the facilitator during the course of learning. This journey culminates in developing advanced dashboards for data visualization.
+This repository showcases various aspect completed during my Excel class, highlighting my proficiency in Excel skills and techniques. Learning from foundational data literacy (Foundation of Data), which laid the groundwork for my understanding of data analysis and manipulation. The main source of data used in these projects was provided by the facilitator during the course of learning. This journey culminates in developing advanced dashboards for data visualization.
 
 ### SQL
+---
 Here our facilitator was able to take us through proper basic sql commands and queries. Navigating different Rational Database Management system (SQL server and Postgress) to ensure optimum use of oppotunity for diverse students and different organization preference 
 #### Content
 1. Introduction to SQL
@@ -180,7 +182,7 @@ primary key (staffid)
 )
 ```
 
-3. Inserting values into table created
+3. Inserting values into table created and importing data from differen sources 
 ```
 insert into Employee (staffid, firstname, secondname, gender,Date_of_Birth, hiredate)
 values ( 'AB401', 'ayan', 'olakun', 'female', '1992-08-22', '2018-02-09'),
@@ -199,7 +201,20 @@ salary_id int identity (1,1)not null,
 SELECT SUM(Salary) AS TOTALSALARY FROM Salary
 ```
 
-6. Joining  different tables
+6. Get specific results based on conditions
+```
+UPDATE SALARY
+SET department = 'Information Tech.'
+where Staffid = 'AB234'
+```
+```
+select count(staffid) as StaffPerSate, state_of_origin 
+from Employee
+GROUP BY State_of_Origin
+HAVING COUNT(staffid) >=3
+```
+
+7. Joining  different tables
 ```
 select employee.staffid, employee.firstname, employee.gender,
 			 Salary.salary
@@ -208,8 +223,30 @@ join Salary
 on salary.Staffid = employee.staffid
 ```
 
+8. Combining results from different tables using
+  - UNION to remove duplicate  result
+  - UNION ALL to return all results
+```
+select * from LITA_Store_Lekki
+	union all
+	select * from LITA_Store_Marina
+```
+
 ### Exploratory Data Analysis
 In the Exploratory Data Analysis(EDA), extract insights from the data to address questions like:
 1. Overall sales trend 
-2. Top selling product by specific region or market
-4. Percentage of revenue generated from specific product by region
+2. Top selling product in assending of descending order
+3. Join 2 or more tables together based on desire results and positions
+4. Combine the result of two or more select queries
+
+### Summary
+The basics of SQL include creating and managing tables, inserting data, and querying data using SELECT statements. Learning how to filter data and perform basic aggregations helps in retrieving and summarizing information from databases. Data sources include synthetic data generated during tthe classes for learning purposes and Sample datasets provided by course instructors
+
+### Power BI
+
+
+## [Capstone Project]
+---
+- [Excel](#excel)
+- [SQL](#sql)
+- [Power BI](#power-bi)
