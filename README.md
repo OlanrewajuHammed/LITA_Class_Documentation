@@ -90,7 +90,7 @@ At this stage we were able to,
 
 ### Basic Excel Function
 #### Data Analysis
-The aim of this phase was to perform data manipulation tasks in other to answer questions on different aggregate using different code. Functions were used based used at differinclude;
+The aim of this phase was to perform data manipulation tasks in other to answer questions on different aggregate using different code. Functions were used based used at include;
 1. overall aggregate;
  - Sum, Average, Max, Min, Count, CountA, Large, Small
 ```
@@ -166,7 +166,7 @@ This section encompass the exposure to the theoretical aspect of sql ranging fro
   - SQL Data types - SQL keys - SQL Clause - SQL Operators - SQL Join - SQL Aggregate - SQL Views
 
 ### Basic SQL Queries
-This phase include utilizing several commands to bring insightful conclusions from data and also taing *primary key* into consideration. The process include:
+This phase include utilizing several commands to bring insightful conclusions from data and also taing *primary key* into consideration. Some of the process include:
 1. Create database: This serve as the house where tables are stored 
 ```
 Create database LITA_DB
@@ -199,5 +199,17 @@ salary_id int identity (1,1)not null,
 SELECT SUM(Salary) AS TOTALSALARY FROM Salary
 ```
 
-6. Logical operations
+6. Joining  different tables
 ```
+select employee.staffid, employee.firstname, employee.gender,
+			 Salary.salary
+from employee
+join Salary
+on salary.Staffid = employee.staffid
+```
+
+### Exploratory Data Analysis
+In the Exploratory Data Analysis(EDA), extract insights from the data to address questions like:
+1. Overall sales trend 
+2. Top selling product by specific region or market
+4. Percentage of revenue generated from specific product by region
