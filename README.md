@@ -22,18 +22,27 @@
 
 ### Project Overview
 ---
-Welcome to my Excel class portfolio! This repository is a collection of my work, demonstrating the growth of my Excel skills from basic data literacy to the creation of data visualizations. Each project includes analyses, visualizations, and documentation of the techniques used. I started with learning foundational data literacy, which laid the groundwork for my understanding of data analysis and manipulation. Explore the projects to see how I applied various Excel functions and features to uncover insights and create compelling visual representations of data.
+Welcome to my Data Analysis class portfolio! This repository is a collection of my work, demonstrating the growth of my skills from basic data literacy to the creation of data visualizations. Each project includes analyses, visualizations, and documentation of the techniques used. My knowledge span from foundational data literacy, which laid the groundwork for my understanding of data analysis and manipulation. Explore the projects to see how I applied various Excel functions and features to uncover insights and create compelling visual representations of data.
+
+### Data Sources
+The data used in these projects were sourced from a variety of locations including:
+Sample datasets provided by course instructors
+Publicly available datasets from online repositories
+Synthetic data generated for learning purposes
+
+### Tools used
+The tools used include 
+1. Microsoft Excel: [Download Here](https://www.microsoft.com)
+   - used for Data cleaning, analysis, and basic visualization.
+3. SQL Server: [Download Here](https://www.microsoft.com/en-us/sql-server/sql-server)
+   - Database management and querying.
+5. Power BI: For data visualization and dashboard creation.
+
 #### Content
 - Foundation of Data
 - Introduction into Microsoft Excel
 - Basic Excel Functions
 - Report and Dashboard in Excel
-
-### Data Sources
-The source of data used are provided by the facilitator during the course of learning.
-
-### Tools used
-#### Microsoft Excel [Download Here](https://www.microsoft.com)
 ##### Skill demonstrated
   1. Foundational Data Literacy
   2. Data Cleaning and Transformation
