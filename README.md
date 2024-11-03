@@ -39,12 +39,12 @@
 
 ### Project Overview
 ---
-Welcome to my Data Analysis class portfolio, this repository is a collection of my work, demonstrating the growth of my skills from basic data literacy to the creation of data visualizations. Each project includes analyses, visualizations, and documentation of the techniques used. My knowledge span from foundational data literacy, which laid the groundwork for my understanding of data analysis and manipulation.
-Explore the projects to see how I applied various functions and features to uncover insights and create compelling visual representations of data.
+Welcome to my Data Analysis class portfolio, this repository is a collection of my work, demonstrating the growth of my skills from basic data literacy to the creation of data visualizations. Each project includes analyses, visualizations, and documentation of the techniques used. My knowledge span from foundational data literacy, which laid the groundwork for my understanding of data analysis and manipulation and major tools used were **Microsoft-Excel**, **SQL Server** and **Power BI**.
 ##### Skill demonstrated
   1. Foundational Data Literacy
   2. Data Cleaning and Transformation
   3. Data Visualization and Creating Dashboard
+Explore the projects to see how I applied various functions and features to uncover insights and create compelling visual representations of data.
 
 ### Data Sources
 The data used in these projects were sourced from a variety of locations including:
@@ -63,6 +63,7 @@ The tools used include
    - Used for data visualization and dashboard creation.
 
 #### Excel
+Here our facilitator was able to take us through microsoft excel where we were able to navigate data
 ##### Content
 - Foundation of Data
 - Introduction into Microsoft Excel
@@ -147,12 +148,20 @@ This aspect summarizes our data, enabling us to to communicate the results of da
 This repository showcases various aspect completed during my Excel class, highlighting my proficiency in Excel skills and techniques. I began with learning foundational data literacy (Foundation of Data), which laid the groundwork for my understanding of data analysis and manipulation. The main source of data used in these projects was provided by the facilitator during the course of learning. This journey culminates in developing advanced dashboards for data visualization.
 
 ### SQL
-Here our facilitator was able to take us throug proper basic sql commands and queries and also 
-####Content
+Here our facilitator was able to take us through proper basic sql commands and queries. Navigating different Rational Database Management system (SQL server and Postgress) to ensure optimum use of oppotunity for diverse students and different organization preference 
+#### Content
 1. Introduction to SQL
 2. Basic SQL Queries
 3. Exploratory Data Analysis
 
 ### Introduction to SQL
-his section encompass the exposure to the theoretical part of sql ranging from:
-1. Introducion
+This section encompass the exposure to the theoretical aspect of sql ranging from:
+1. Explanation of SQL and its rules. Some of which are
+ - Not being case sensitive, Statement depending on text line
+2. What database in sql means and how it store data
+3. Basic SQL commands and their types
+ - Data definition Language (e.g create), Data Manipulation Language (e.g insert), Data Control Language (e.g grant), Data Transaction Language (e.g commit) and Data Query Language (create)
+4. Several basic function which include
+ - SQL Data types - SQL keys - SQL Clause - SQL Operators - SQL Join - SQL Aggregate - SQL Views
+
+### Basic SQL Queries
