@@ -1,6 +1,6 @@
-# LITA_Excel_Class_Portfolio
+# LITA_Class_Portfolio
 
-### Project Title: Basics of Microsoft Excel
+### Project Title: Comprehensive Data Analysis Portfolio
 
 [Project Overview](#project-overview)
 
@@ -8,17 +8,14 @@
 
 [Tools used](#tools-used)
 
-[Foundation of Data](#foundation-of-data)
-
-[Introduction](#introduction)
-
-[Basic Function](#basic-function)
-
-[Exploratory Data Analysis](#exploratory-data-analysis)
-
-[Report and Dashboard](#report-and-dashboard)
-
-[Summary](#summary)
+[Microsoft Excel](#microsoft-excel)
+----
+- [Foundation of Data](#foundation-of-data)
+- [Introduction into Microsoft Excel](#introduction-into-microsoft-excel)
+- [Basic Excel Function](#basic-excel-function)
+- [Exploratory Data Analysis](#exploratory-data-analysis)
+- [Report and Dashboard](#report-and-dashboard)
+- [Summary](#summary)
 
 ### Project Overview
 ---
@@ -33,6 +30,7 @@ The data used in these projects were sourced from a variety of locations includi
 - Sample datasets provided by course instructors
 - Publicly available datasets from online repositories
 - Synthetic data generated during tthe classes for learning purposes
+- Capstone dataset which include 
 
 ### Tools used
 The tools used include 
@@ -43,8 +41,7 @@ The tools used include
 5. Power BI:[Download Here](https://www.microsoft.com/en-us/power-platform/products/power-bi/downloads)
    - Used for data visualization and dashboard creation.
 
-### Introduction
-####Microsoft Excel
+#### Microsoft Excel
 ##### Content
 - Foundation of Data
 - Introduction into Microsoft Excel
@@ -59,47 +56,61 @@ This phase serve as an insight to enhance our excel journey, we were introduced 
 - Ingestion, Transformation, Modeling, Visualization, Analysis, Presentation
   
 ### Introduction into Microsoft Excel
-This phase encompass the following action:
+At this stage we were able to,
 1. Navigating Excel interphase
-2. Data loading and inspection
+2. Perform data loading and inspection to understand data structure
 3. Handling missing variables
-4. Data cleaning and formatting
+4. Perform data cleaning and formatting: which include removing duplicates, data validation, building a drop-down list
+
+![Screenshot (61)](https://github.com/user-attachments/assets/ce26346a-157c-4c39-bd4c-e3da70c4914a)
+
+![Screenshot (65)](https://github.com/user-attachments/assets/58df7fd2-12c0-44d5-9cec-e6a306a26646)
 
 ### Basic Excel Function
 #### Data Analysis
-The aim of this phase was to perform data manipulation tasks in other to answer questions on different aggregate using different code. Functions used include;
+The aim of this phase was to perform data manipulation tasks in other to answer questions on different aggregate using different code. Functions were used based used at differinclude;
 1. overall aggregate;
  - Sum, Average, Max, Min, Count, CountA, Large, Small
 ```
 =SUM(D8:D27)
 ```
-2. conditional funtions;
+![Screenshot (73)](https://github.com/user-attachments/assets/dfc5faaa-04de-4a15-b62a-83018e5ee73f)
+
+2. conditional funtions; to specify answe if a particular condition is met
    - Sumif(s), Averageif(s), Maxifs, Maxa , Minifs, Countif(s), If(s) 
 ```
 =COUNTIF(C8:C27,C19)
 ```
+![Screenshot (78)](https://github.com/user-attachments/assets/345b2987-005a-4657-b7ad-13e487a51323)
+
 3. Data extraction and joining;
-   - Left, Mid, Right, Concatenate
+   - Extaction function: Left, Mid, Right,
+   - Join function: Concatenate
 ```
 =LEFT(B6,FIND(" ",B6))
 ```
 ```
 =CONCATENATE(B16&" "&C16)
 ```
-4. Text Cleaning
-   - Trim, Lower,  Upper, Proper
+
+4. Text Cleaning for removing excess spaces and writing in specified cases 
+   - Trim
+   - Lower,  Upper, Proper
 ```
 =UPPER(B7)
 ```
+![Screenshot (88)](https://github.com/user-attachments/assets/d30ba982-f985-4619-8561-d7e01b3903ea)
+
 4. Data retrieval;
    - Vlookup, Match, Xlookup, Index
 ```
 =VLOOKUP(Database!$E21,'Simple Salary Structure'!$B$8:$I$16,2,FALSE)
 ```
+![Screenshot (108)](https://github.com/user-attachments/assets/9cb80d96-6a5d-4ead-a36b-eb7eb9d8428a)
 
 ### Exploratory Data Analysis
 When delving into the analysis phase of Exploratory Data Analysis(EDA), we adopt a structured method to comprehend and extract insights from the data to address questions like:
-1. Overall sales trend
+1. Overall sales trend 
 2. Top selling product by specific region or market
 3. Monthly sales pattern
 4. Percentage of revenue generated from specific product by region
@@ -108,7 +119,6 @@ When delving into the analysis phase of Exploratory Data Analysis(EDA), we adopt
 This aspect summarizes our data, enabling us to to communicate the results of data analysis in a structured format using the pivot table, and display key performance indicators and metrics in a dynamic, interactive format using charts, graphs.
 
 ![Screenshot (146)](https://github.com/user-attachments/assets/92ab1b63-a998-4cc7-be25-26e4ae432ef9)
-
 
 ![Screenshot (130)](https://github.com/user-attachments/assets/e1ba4f14-85ef-4172-8e5d-05b1f16cc17a)
 
