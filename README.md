@@ -10,9 +10,9 @@
 
 [Foundation of Data](#foundation-of-data)
 
-[Introduction into Microsoft Excel](#introduction-into-microsoft-excel)
+[Introduction](#introduction)
 
-[Basic Excel Function](#basic-excel-function)
+[Basic Function](#basic-function)
 
 [Exploratory Data Analysis](#exploratory-data-analysis)
 
@@ -23,48 +23,40 @@
 ### Project Overview
 ---
 Welcome to my Data Analysis class portfolio! This repository is a collection of my work, demonstrating the growth of my skills from basic data literacy to the creation of data visualizations. Each project includes analyses, visualizations, and documentation of the techniques used. My knowledge span from foundational data literacy, which laid the groundwork for my understanding of data analysis and manipulation. Explore the projects to see how I applied various Excel functions and features to uncover insights and create compelling visual representations of data.
+##### Skill demonstrated
+  1. Foundational Data Literacy
+  2. Data Cleaning and Transformation
+  3. Data Visualization and Creating Dashboard
 
 ### Data Sources
 The data used in these projects were sourced from a variety of locations including:
-Sample datasets provided by course instructors
-Publicly available datasets from online repositories
-Synthetic data generated for learning purposes
+- Sample datasets provided by course instructors
+- Publicly available datasets from online repositories
+- Synthetic data generated during tthe classes for learning purposes
 
 ### Tools used
 The tools used include 
-1. Microsoft Excel: [Download Here](https://www.microsoft.com)
-   - used for Data cleaning, analysis, and basic visualization.
-3. SQL Server: [Download Here](https://www.microsoft.com/en-us/sql-server/sql-server)
-   - Database management and querying.
-5. Power BI: For data visualization and dashboard creation.
+1. Microsoft Excel: [Download Here](https://www.microsoft.com/en-us/microsoft-365/excel?ocid=ORSEARCH_Bing&msockid=31ccbb7207cd643010e1ae7e060d65f3)
+   - Used for Data cleaning, analysis, and basic visualization.
+3. SQL Server: [Download Here](https://www.microsoft.com/en-us/sql-server/sql-server-downloads?msockid=31ccbb7207cd643010e1ae7e060d65f3)
+   - Used for Database management and querying.
+5. Power BI:[Download Here](https://www.microsoft.com/en-us/power-platform/products/power-bi/downloads)
+   - Used for data visualization and dashboard creation.
 
-#### Content
+### Introduction
+####Microsoft Excel
+##### Content
 - Foundation of Data
 - Introduction into Microsoft Excel
 - Basic Excel Functions
 - Report and Dashboard in Excel
-##### Skill demonstrated
-  1. Foundational Data Literacy
-  2. Data Cleaning and Transformation
-  3. Basic Excel Analysis
-  4. Pivot Tables
-  5. Data Visualization and Creating Dashboard
 
 ### Foundation of Data
 This phase serve as an insight to enhance our excel journey, we were introduced to the following:
- 1. Data Literacy:
-   - Data Generation
-   - Data storage
-   - Data Stucture
-   - Statistic 
-   - Data Driven Decision Making
- 2. Data Analysis Life Cycle
-   - Ingestion
-   - Transformation
-   - Modeling
-   - Visualization
-   - Analysis
-   - Presentation
+ 1. Data Literacy: which encompasses
+- Data Generation, Data storage, Data Stucture, Statistic, Data Driven Decision Making
+2. Data Analysis Life Cycle: which include  
+- Ingestion, Transformation, Modeling, Visualization, Analysis, Presentation
   
 ### Introduction into Microsoft Excel
 This phase encompass the following action:
