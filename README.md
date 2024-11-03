@@ -9,7 +9,6 @@
 [Tools used](#tools-used)
 
 [Excel](#excel)
-----
 - [Foundation of Data](#foundation-of-data)
 - [Introduction into Microsoft Excel](#introduction-into-microsoft-excel)
 - [Basic Excel Function](#basic-excel-function)
@@ -18,13 +17,11 @@
 - [Summary](#summary)
 
 [SQL](#sql)
-----
 - [Introduction to SQL](#introduction-to-sql)
 - [Basic SQL Queries](#basic-sql-queries)
 - [Exploratory Data Analysis](#exploratory-data-analysis)
 
 [Power BI](#power-bi)
-----
 - [Introduction into Power BI](#introduction-into-power-bi)
 - [Component of Power BI](#component-of-power-bi)
 - [Exploratory Data Analysis](#exploratory-data-analysis)
@@ -32,7 +29,6 @@
 - [Summary](#summary)
 
 [Capstone Project](#capstone-project)
----
 - [Excel](#excel)
 - [SQL](#sql)
 - [Power BI](#power-bi)
@@ -149,7 +145,7 @@ This repository showcases various aspect completed during my Excel class, highli
 
 ### SQL
 ---
-Here our facilitator was able to take us through proper basic sql commands and queries. Navigating different Rational Database Management system (SQL server and Postgress) to ensure optimum use of oppotunity for diverse students and different organization preference 
+Here our facilitator was able to take us through proper basic sql commands and queries. Navigating different Rational Database Management system (SQL server and Postgress) to ensure optimum use of oppotunity for diverse students and organizations preference 
 #### Content
 1. Introduction to SQL
 2. Basic SQL Queries
@@ -185,7 +181,15 @@ primary key (staffid)
 )
 ```
 
-3. Inserting values into table created and importing data from differen sources (following column arragement)
+|Heading 1|Heading 2|Heading 3|Heading 4|Heading 5|Heading 6|
+|---------|---------|---------|---------|---------|---------|
+|staffid|firstname|secondname|gender|Date_of_Birth|hiredate|
+
+3. Inserting values into table created and importing data from different sources (following column arragement)
+
+|staffid|firstname|secondname|gender|Date_of_Birth|hiredate|
+|---------|---------|---------|---------|---------|---------|
+|AB401|ayan|olakun|female|1992-08-22|2018-02-09|
 ```
 insert into Employee (staffid, firstname, secondname, gender,Date_of_Birth, hiredate)
 values ( 'AB401', 'ayan', 'olakun', 'female', '1992-08-22', '2018-02-09'),
@@ -273,8 +277,10 @@ The basics of SQL include creating and managing tables, inserting data, and quer
 
 ### Power BI
 ---
+Here our facilitator introduced us to the Power BI tool including proper navigation utilization 
 
-[Introduction into Power BI](#introduction-into-power-bi)
+### Introduction into Power BI
+This 
 - [Component of Power BI](#component-of-power-bi)
 - [Exploratory Data Analysis](#exploratory-data-analysis)
 - [Report and Dashboard](#report-and-dashboard)
@@ -283,7 +289,7 @@ The basics of SQL include creating and managing tables, inserting data, and quer
 
 ## [Capstone Project]
 ---
-T
+
 - [Excel](#excel)
 - [SQL](#sql)
 - [Power BI](#power-bi)
