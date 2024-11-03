@@ -1,6 +1,6 @@
 # LITA_Class_Portfolio
 
-### Project Title: Comprehensive Data Analysis Portfolio
+## Project Title: Comprehensive Data Analysis
 
 [Project Overview](#project-overview)
 
@@ -8,7 +8,7 @@
 
 [Tools used](#tools-used)
 
-[Microsoft Excel](#microsoft-excel)
+[Excel](#excel)
 ----
 - [Foundation of Data](#foundation-of-data)
 - [Introduction into Microsoft Excel](#introduction-into-microsoft-excel)
@@ -17,9 +17,30 @@
 - [Report and Dashboard](#report-and-dashboard)
 - [Summary](#summary)
 
+[SQL](#sql)
+----
+- [Introduction to SQL](#introduction-to-sql)
+- [Basic SQL Queries](#basic-sql-queries)
+- [Exploratory Data Analysis](#exploratory-data-analysis)
+
+[Power BI](#power-bi)
+----
+- [Introduction into Power BI](#introduction-into-power-bi)
+- [Component of Power BI](#component-of-power-bi)
+- [Exploratory Data Analysis](#exploratory-data-analysis)
+- [Report and Dashboard](#report-and-dashboard)
+- [Summary](#summary)
+
+[Capstone Project](#capstone-project)
+---
+- [Excel](#excel)
+- [SQL](#sql)
+- [Power BI](#power-bi)
+
 ### Project Overview
 ---
-Welcome to my Data Analysis class portfolio! This repository is a collection of my work, demonstrating the growth of my skills from basic data literacy to the creation of data visualizations. Each project includes analyses, visualizations, and documentation of the techniques used. My knowledge span from foundational data literacy, which laid the groundwork for my understanding of data analysis and manipulation. Explore the projects to see how I applied various Excel functions and features to uncover insights and create compelling visual representations of data.
+Welcome to my Data Analysis class portfolio, this repository is a collection of my work, demonstrating the growth of my skills from basic data literacy to the creation of data visualizations. Each project includes analyses, visualizations, and documentation of the techniques used. My knowledge span from foundational data literacy, which laid the groundwork for my understanding of data analysis and manipulation.
+Explore the projects to see how I applied various functions and features to uncover insights and create compelling visual representations of data.
 ##### Skill demonstrated
   1. Foundational Data Literacy
   2. Data Cleaning and Transformation
@@ -41,7 +62,7 @@ The tools used include
 5. Power BI:[Download Here](https://www.microsoft.com/en-us/power-platform/products/power-bi/downloads)
    - Used for data visualization and dashboard creation.
 
-#### Microsoft Excel
+#### Excel
 ##### Content
 - Foundation of Data
 - Introduction into Microsoft Excel
@@ -125,4 +146,13 @@ This aspect summarizes our data, enabling us to to communicate the results of da
 ### Summary
 This repository showcases various aspect completed during my Excel class, highlighting my proficiency in Excel skills and techniques. I began with learning foundational data literacy (Foundation of Data), which laid the groundwork for my understanding of data analysis and manipulation. The main source of data used in these projects was provided by the facilitator during the course of learning. This journey culminates in developing advanced dashboards for data visualization.
 
+### SQL
+Here our facilitator was able to take us throug proper basic sql commands and queries and also 
+####Content
+1. Introduction to SQL
+2. Basic SQL Queries
+3. Exploratory Data Analysis
 
+### Introduction to SQL
+his section encompass the exposure to the theoretical part of sql ranging from:
+1. Introducion
