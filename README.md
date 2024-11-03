@@ -157,11 +157,47 @@ Here our facilitator was able to take us through proper basic sql commands and q
 ### Introduction to SQL
 This section encompass the exposure to the theoretical aspect of sql ranging from:
 1. Explanation of SQL and its rules. Some of which are
- - Not being case sensitive, Statement depending on text line
+  - Not being case sensitive, Statement depending on text line
 2. What database in sql means and how it store data
 3. Basic SQL commands and their types
- - Data definition Language (e.g create), Data Manipulation Language (e.g insert), Data Control Language (e.g grant), Data Transaction Language (e.g commit) and Data Query Language (create)
+  - Data definition Language (e.g create), Data Manipulation Language (e.g insert), Data Control Language (e.g grant), Data Transaction Language (e.g commit) and Data Query Language (create)
 4. Several basic function which include
- - SQL Data types - SQL keys - SQL Clause - SQL Operators - SQL Join - SQL Aggregate - SQL Views
+  - Craeting database, creating table and different data command
+  - SQL Data types - SQL keys - SQL Clause - SQL Operators - SQL Join - SQL Aggregate - SQL Views
 
 ### Basic SQL Queries
+This phase include utilizing several commands to bring insightful conclusions from data and also taing *primary key* into consideration. The process include:
+1. Create database: This serve as the house where tables are stored 
+```
+Create database LITA_DB
+```
+
+2. CREATE TABLE: Similar to excel table where data are store and ensuring appropriate data type
+```
+CREATE TABLE Employee (
+staffid varchar (10) not null, FirstName varchar (255) NOT NULL, SecondName varchar (255), Gender varchar (10), Date_of_Birth date, HireDate datetime,
+primary key (staffid)
+)
+```
+
+3. Inserting values into table created
+```
+insert into Employee (staffid, firstname, secondname, gender,Date_of_Birth, hiredate)
+values ( 'AB401', 'ayan', 'olakun', 'female', '1992-08-22', '2018-02-09'),
+( 'AB212', 'okorie', 'mercy', 'female','1988-10-09', '2018-10-09')
+```
+
+4. Creating auto-numbering command
+```
+CREATE TABLE Salary (
+salary_id int identity (1,1)not null,
+```
+
+5. Creating queries for agreegate using functions like
+   - sum, min,max, average count
+```
+SELECT SUM(Salary) AS TOTALSALARY FROM Salary
+```
+
+6. Logical operations
+```
