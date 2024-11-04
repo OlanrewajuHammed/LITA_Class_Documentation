@@ -277,10 +277,22 @@ A data visualization and business intelligence tool. Here our facilitator introd
 
 ### Introduction into Power BI
 This phase expantiate the what the tool entails and its working system which include 
-1. Power Bi as a multiple software connectors with the ability to connect to several supported data sources at a time . Data sources include
+1. Explanation of the tool as a multiple software connectors with the ability to connect to several supported data sources at a time . Data sources include
    - Excel, SQL server, Online services etc.
-2. Explaning the component
-    
+2. introduction to the its different component which includes
+   - Power BI Desktop where all visualization ate done
+   - Power BI Mobile Application
+   - Power BI Gateway
+   - Power BI service used to publish report
+3. Elaboration on the  interface including
+   - The repot view, data view, model view and DAX query view 
+   - VIsualualization pan: component are
+     - bar chat, histogram, map, table etc.
+4. Principles of data visualization: enumerating steps to proper decision making
+
+### Visialization and creating Dashboard 
+Actions perform in this phase include importing of data from different sources and building visualization to show compelling result
+1. Importing and transformation of data:
 
 
 - [Exploratory Data Analysis](#exploratory-data-analysis)
