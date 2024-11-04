@@ -286,13 +286,39 @@ This phase expantiate the what the tool entails and its working system which inc
    - Power BI service used to publish report
 3. Elaboration on the  interface including
    - The repot view, data view, model view and DAX query view 
-   - VIsualualization pan: component are
+   - VIsualualization pane: component are
      - bar chat, histogram, map, table etc.
 4. Principles of data visualization: enumerating steps to proper decision making
 
-### Visialization and creating Dashboard 
+### Data Transformer 
 Actions perform in this phase include importing of data from different sources and building visualization to show compelling result
-1. Importing and transformation of data:
+1. Creating real life dataset from class and importing data from excel
+
+2. Data transformation : where data cleaning is carried out. Actions include
+   - Transposing data, removing specific column and rows, promoting header, correcting datatype etc..
+
+4. Sorting data by delimeter: used for
+   - splitting a column into columns
+   - sorting data in ascending or descending order
+
+5. Checking for Data consistency previewing from 
+   - column quality, column distribution, column profile
+  
+6. Appending and merging colunm of similar dataset
+   - Append add data to row
+   - merging add to column
+
+7. Chaging text case and merging columns using
+   - Upper,proper and lower function
+   - concatenate to merge 
+  
+### Report and Dashboard 
+1. Creating measure for calculations using the DAX function 
+2. Creating conditional column
+
+
+
+
 
 
 - [Exploratory Data Analysis](#exploratory-data-analysis)
