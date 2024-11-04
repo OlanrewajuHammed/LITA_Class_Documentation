@@ -23,15 +23,11 @@
 
 [Power BI](#power-bi)
 - [Introduction into Power BI](#introduction-into-power-bi)
-- [Component of Power BI](#component-of-power-bi)
 - [Exploratory Data Analysis](#exploratory-data-analysis)
 - [Report and Dashboard](#report-and-dashboard)
 - [Summary](#summary)
 
 [Capstone Project](#capstone-project)
-- [Excel](#excel)
-- [SQL](#sql)
-- [Power BI](#power-bi)
 
 ### Project Overview
 ---
@@ -58,7 +54,7 @@ The tools used include
 5. Power BI:[Download Here](https://www.microsoft.com/en-us/power-platform/products/power-bi/downloads)
    - Used for data visualization and dashboard creation.
 
-### Excel
+## Excel
 ---
 Here our facilitator took us through microsoft excel where we navigate the following context
 ##### Content
@@ -143,9 +139,9 @@ This aspect summarizes our data, enabling us to to communicate the results of da
 ### Summary
 This repository showcases various aspect completed during my Excel class, highlighting my proficiency in Excel skills and techniques. Learning from foundational data literacy (Foundation of Data), which laid the groundwork for my understanding of data analysis and manipulation. The main source of data used in these projects was provided by the facilitator during the course of learning. This journey culminates in developing advanced dashboards for data visualization.
 
-### SQL
+## SQL
 ---
-Here our facilitator was able to take us through proper basic sql commands and queries. Navigating different Rational Database Management system (SQL server and Postgress) to ensure optimum use of oppotunity for diverse students and organizations preference 
+Here our facilitator was able to take us through proper basic sql commands and queries by navigating different Rational Database Management system (SQL server and Postgress) to ensure optimum use of oppotunity for diverse students and different organizations preference. Data sources include synthetic data generated during the classes for learning purposes and Sample datasets provided by course instructors
 #### Content
 1. Introduction to SQL
 2. Basic SQL Queries
@@ -164,7 +160,7 @@ This section encompass the exposure to the theoretical aspect of sql ranging fro
   - SQL Data types - SQL keys - SQL Clause - SQL Operators - SQL Join - SQL Aggregate
 5. Craeting SQL Views: a vitual table created based on result of queries. It serves as security to restrict exposure of certain data
 
-![Uploading Screenshot (155).png…]()
+![Screenshot (155)](https://github.com/user-attachments/assets/c23373fd-affd-4eaf-8c9f-5d2231e44e40)
 
 ### Basic SQL Queries
 This phase include utilizing several commands to bring insightful conclusions from data and also taing *primary key* into consideration. Some of the process include:
@@ -273,15 +269,20 @@ In the Exploratory Data Analysis(EDA), extract insights from the data to address
 4. Combine the result of two or more select queries
 
 ### Summary
-The basics of SQL include creating and managing tables, inserting data, and querying data using SELECT statements. Learning how to filter data and perform basic aggregations helps in retrieving and summarizing information from databases. Data sources include synthetic data generated during tthe classes for learning purposes and Sample datasets provided by course instructors
+The basics of SQL include creating and managing tables, inserting data, and querying data using SELECT statements. Learning how to filter data and perform basic aggregations helps in retrieving and summarizing information from databases. Data sources include synthetic data generated during the classes for learning purposes and Sample datasets provided by course instructors
 
 ### Power BI
 ---
-Here our facilitator introduced us to the Power BI tool including proper navigation utilization 
+A data visualization and business intelligence tool. Here our facilitator introduced us to the Power BI tool including proper navigation. Data sources used are synthetic data generated during the classes for learning purposes, Sample datasets provided by course instructors which include  (HR data, Columnar data, International Breweries dataset, Loan data) and data imported from Power BI supported data sources
 
 ### Introduction into Power BI
-This 
-- [Component of Power BI](#component-of-power-bi)
+This phase expantiate the what the tool entails and its working system which include 
+1. Power Bi as a multiple software connectors with the ability to connect to several supported data sources at a time . Data sources include
+   - Excel, SQL server, Online services etc.
+2. Explaning the component
+    
+
+
 - [Exploratory Data Analysis](#exploratory-data-analysis)
 - [Report and Dashboard](#report-and-dashboard)
 - [Summary](#summary)
