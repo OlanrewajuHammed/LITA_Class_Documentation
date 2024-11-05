@@ -326,9 +326,24 @@ Actions perform in this phase include importing of data from different sources a
    - concatenate to merge 
   
 ### Report and Dashboard 
-1. Creating measure for calculations using the DAX function using the different dataset peovides and generated in class 
-2. Creating conditional column: representing unique row name by number, nubers by text
-3. 
+This phase require creating some calculated and conditional column to enable proper visualization 
+1. **Creating *measure* (Analytic Expression)**: to create a single desired value from entire table.
+   
+2. **Creating conditional column**: representing unique row name by number, numbers by text
+
+If Job satisfaction = 1 --> Satisfied 
+Else
+Unsatisfied 
+
+
+3.  **Visualization**: This part consist of building visuals and formatibg visuals for efficient presentation of findings. Visuals are presented on
+   - bar chart: to check particular dimension against period or value
+   - doughnut: check ratio of entities 
+   - map: to visualize real life location of desired entity
+   - Q & A: To know count by yes or no true or false 
+   - slicer: using particular entity to look around data
+   - matrix: showing entities of calculated column and other desired columns
+
 
 
 
