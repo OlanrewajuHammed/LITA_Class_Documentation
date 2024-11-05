@@ -636,6 +636,7 @@ WHERE month (Subscription_Start) <= 6 and canceled = 'true'
 ![Screenshot (197)](https://github.com/user-attachments/assets/a7097b50-1dbb-408f-8ffb-b8b123ffde9a)
 
  - Calculate the average subscription duration for all customers.
+```
 SELECT Count(CustomerID) As All_Customers,
 select AVG(DATEDIFF(DAY,subscriptionstart,SubscriptionEnd)) AS Average_Subscription_Duration 
 FROM  [dbo].[Sales_Data]
