@@ -8,6 +8,7 @@
 
 [Tools used](#tools-used)
 
+
 [Excel](#excel)
 - [Foundation of Data](#foundation-of-data)
 - [Introduction into Microsoft Excel](#introduction-into-microsoft-excel)
@@ -16,11 +17,13 @@
 - [Report and Dashboard](#report-and-dashboard)
 - [Summary](#summary)
 
+
 [SQL](#sql)
 - [Introduction to SQL](#introduction-to-sql)
 - [Basic SQL Queries](#basic-sql-queries)
 - [Exploratory Data Analysis](#exploratory-data-analysis)
 - [Summary](#summary)
+
 
 [Power BI](#power-bi)
 - [Introduction into Power BI](#introduction-into-power-bi)
@@ -28,6 +31,7 @@
 - [Report and Dashboard](#report-and-dashboard) 
 - [Exploratory Data Analysis](#exploratory-data-analysis)
 - [Summary](#summary)
+
 
 [Capstone Project](#capstone-project)
 
@@ -140,6 +144,7 @@ This aspect summarizes our data, enabling us to to communicate the results of da
 
 ### Summary
 This repository showcases various aspect completed during my Excel class, highlighting my proficiency in Excel skills and techniques. Learning from foundational data literacy (Foundation of Data), which laid the groundwork for my understanding of data analysis and manipulation. The main source of data used in these projects was provided by the facilitator during the course of learning. This journey culminates in developing advanced dashboards for data visualization.
+
 
 ## SQL
 ---
@@ -273,7 +278,8 @@ In the Exploratory Data Analysis(EDA), extract insights from the data to address
 ### Summary
 The basics of SQL include creating and managing tables, inserting data, and querying data using SELECT statements. Learning how to filter data and perform basic aggregations helps in retrieving and summarizing information from databases. Data sources include synthetic data generated during the classes for learning purposes and Sample datasets provided by course instructors
 
-### Power BI
+
+## Power BI
 ---
 A data visualization and business intelligence tool. Here our facilitator introduced us to the Power BI tool including proper navigation. Data sources used are synthetic data generated during the classes for learning purposes, Sample datasets provided by course instructors which include  (HR data, Columnar data, International Breweries dataset, Loan data) and data imported from Power BI supported data sources
 
@@ -336,13 +342,9 @@ In this repository, I document my journey of mastering Power BI, a powerful tool
 ## [Capstone Project]
 ---
 ### Introduction
-
 This repository documents my work on a capstone project designed to assess my skills in data analysis using Excel, SQL, and Power BI. The project involved working with two datasets: sales data and customer data. The objective was to demonstrate my knowledge and skills acquired during classes, as well as to showcase my ability to apply these skills to real-world data. Additionally, this project allowed me to document my learning journey beyond the classroom, highlighting my ability to clean, analyze, and visualize data effectively.
 
----
-
 ### Excel
-
 #### Data Cleaning
 1. **Remove Duplicates**: The first step was to remove duplicates from both datasets to ensure data integrity. This was done using the "Remove Duplicates" feature in Excel.
 2. **Generate Revenue Column**: For the sales data, I generated a revenue column by multiplying the Quantity column by the Unit Sold column.
@@ -362,7 +364,6 @@ This repository documents my work on a capstone project designed to assess my sk
    - Additional insights included customer retention rates, average subscription duration, and revenue trends over subscription periods.
 
 ### SQL
-
 #### Database Creation
 1. **Create Databases**: I created separate databases for the sales and customer datasets.
 2. **Import Data**: Imported the capstone datasets from Excel into SQL.
@@ -374,45 +375,44 @@ This repository documents my work on a capstone project designed to assess my sk
 
 #### Exploratory Data Analysis (EDA)
 1. **Sales Data**:
-   - Wrote queries to extract key insights based on the following questions:
-     - Retrieve the total sales for each product category.
-     - Find the number of sales transactions in each region.
-     - Identify the highest-selling product by total sales value.
-     - Calculate total revenue per product.
-     - Calculate monthly sales totals for the current year.
-     - Find the top 5 customers by total purchase amount.
-     - Calculate the percentage of total sales contributed by each region.
-     - Identify products with no sales in the last quarter.
+- Wrote queries to extract key insights based on the following questions:
+  - Retrieve the total sales for each product category.
+  - Find the number of sales transactions in each region.
+  - Identify the highest-selling product by total sales
+  - Calculate total revenue per product.
+  - Calculate monthly sales totals for the current year.
+  - Find the top 5 customers by total purchase amount.
+  - Calculate the percentage of total sales contributed by each region.
+  - Identify products with no sales in the last quarter.
 2. **Customer Data**:
-   - Wrote queries to extract key insights based on the following questions:
-     - Retrieve the total number of customers from each region.
-     - Find the most popular subscription type by the number of customers.
-     - Identify customers who canceled their subscription within 6 months.
-     - Calculate the average subscription duration for all customers.
-     - Find customers with subscriptions longer than 12 months.
-     - Calculate total revenue by subscription type.
-     - Find the top 3 regions by subscription cancellations.
-     - Find the total number of active and canceled subscriptions.
+- Wrote queries to extract key insights based on the following questions:
+  - Retrieve the total number of customers from each region.
+  - Find the most popular subscription type by the number of customers.
+  - Identify customers who canceled their subscription within 6 months.
+  - Calculate the average subscription duration for all customers.
+  - Find customers with subscriptions longer than 12 months.
+  - Calculate total revenue by subscription type.
+  - Find the top 3 regions by subscription cancellations.
+  - Find the total number of active and canceled subscriptions.
 
 #### Visualization Preparation
 1. **Export Data**: Exported cleaned and aggregated data for visualization in Power BI.
 
 ### Power BI
-
-### Data Import and Transformation
+#### Data Import and Transformation
 1. **Import Data**: Imported data from Excel into Power BI.
 2. **Transform Data**: Used Power Query Editor to clean and transform the data.
    - For sales data, generated revenue by multiplying the Quantity column by the Unit Sold column.
    - Checked for column consistency, including column quality, distribution, and profile.
 
-### Measure Creation
+#### Measure Creation
 1. **Sales Data**:
    - Created measures like total revenue and count of customers.
 2. **Customer Data**:
    - Created a conditional column (cancellation count) for canceled subscriptions based on true or false values.
    - Created several measures such as cancellation rate and total number of customers.
 
-### Dashboard Creation
+#### Dashboard Creation
 1. **Sales Data**:
    - Built a Power BI dashboard that visualizes the insights found in Excel and SQL.
    - Included a sales overview, top-performing products, and regional breakdowns.
