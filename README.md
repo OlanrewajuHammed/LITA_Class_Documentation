@@ -292,16 +292,21 @@ This phase expantiate the what the tool entails and its working system which inc
 
 ### Data Transformer 
 Actions perform in this phase include importing of data from different sources and building visualization to show compelling result
-1. Creating real life dataset from class and importing data from excel
+1. Generating real life dataset from class and importing data from different sources
 
-2. Data transformation : where data cleaning is carried out. Actions include
+|Heading 1|Heading 2|Heading 3|Heading 4|Heading 5|Heading 6|
+|---------|---------|---------|---------|---------|---------|
+|Name|Gender|marital status|level of education|Email address|hiredate|
+
+
+3. Data transformation: where data cleaning is carried out. Actions include
    - Transposing data, removing specific column and rows, promoting header, correcting datatype etc..
 
 4. Sorting data by delimeter: used for
    - splitting a column into columns
    - sorting data in ascending or descending order
 
-5. Checking for Data consistency previewing from 
+5. Checking for Data consistency previewing 
    - column quality, column distribution, column profile
   
 6. Appending and merging colunm of similar dataset
@@ -313,8 +318,9 @@ Actions perform in this phase include importing of data from different sources a
    - concatenate to merge 
   
 ### Report and Dashboard 
-1. Creating measure for calculations using the DAX function 
-2. Creating conditional column
+1. Creating measure for calculations using the DAX function using the different dataset peovides and generated in class 
+2. Creating conditional column: representing unique row name by number, nubers by text
+3. 
 
 
 
