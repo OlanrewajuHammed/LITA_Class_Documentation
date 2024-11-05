@@ -344,11 +344,12 @@ Unsatisfied
    - slicer: using particular entity to look around data
    - matrix: showing entities of calculated column and other desired columns
 
-
-
-
-
 ### Exploratory Data Analysis
+In this EDA we were able to visualiza proper adequate finding to answer questions and show trends 
+1. Attrition count by Department
+2. Product distribution by region using the map
+3. Njmber of current employees by gender
+4. Job role by job satisfactory level
 
 ### Summary
 In this repository, I document my journey of mastering Power BI, a powerful tool for data visualization and business analytics. Throughout this course, I have learned to navigate the Power BI interface, transform and clean data using the Power Query Editor, and create a variety of visualizations. I have also developed skills in building interactive dashboards that consolidate data insights and facilitate informed decision-making. This repository serves as a comprehensive guide, showcasing my progress and the practical applications of Power BI in data analysis.
