@@ -1,4 +1,4 @@
-# LITA_Class_Portfolio
+I'm# LITA_Class_Portfolio
 
 ## Project Title: Comprehensive Data Analysis
 
@@ -325,16 +325,98 @@ Actions perform in this phase include importing of data from different sources a
 
 
 
+### Exploratory Data Analysis
 
-
-- [Exploratory Data Analysis](#exploratory-data-analysis)
-- [Report and Dashboard](#report-and-dashboard)
-- [Summary](#summary)
+### Summary
+In this repository, I document my journey of mastering Power BI, a powerful tool for data visualization and business analytics. Throughout this course, I have learned to navigate the Power BI interface, transform and clean data using the Power Query Editor, and create a variety of visualizations. I have also developed skills in building interactive dashboards that consolidate data insights and facilitate informed decision-making. This repository serves as a comprehensive guide, showcasing my progress and the practical applications of Power BI in data analysis.
 
 
 ## [Capstone Project]
 ---
+### Introduction
 
-- [Excel](#excel)
-- [SQL](#sql)
-- [Power BI](#power-bi)
+This repository documents my work on a capstone project designed to assess my skills in data analysis using Excel, SQL, and Power BI. The project involved working with two datasets: sales data and customer data. The objective was to demonstrate my knowledge and skills acquired during classes, as well as to showcase my ability to apply these skills to real-world data. Additionally, this project allowed me to document my learning journey beyond the classroom, highlighting my ability to clean, analyze, and visualize data effectively.
+
+---
+
+### Excel
+
+#### Data Cleaning
+1. **Remove Duplicates**: The first step was to remove duplicates from both datasets to ensure data integrity. This was done using the "Remove Duplicates" feature in Excel.
+2. **Generate Revenue Column**: For the sales data, I generated a revenue column by multiplying the Quantity column by the Unit Sold column.
+3. **Validate Columns**: I validated the columns to ensure data consistency and accuracy. This involved checking for any inconsistencies or errors in the data.
+4. **Create Drop-Down Lists**: To standardize data entries, I created drop-down lists for certain columns, such as Product and Region.
+
+#### Aggregations
+1. **Aggregate Functions**: In a separate worksheet, I performed various aggregations using functions like `SUM`, `AVERAGE`, `MAX`, `MIN`, and `COUNT`.
+2. **Conditional Columns**: I calculated conditional columns using functions like `SUMIF`, `AVERAGEIF`, `COUNTIF`, and `IFS` to analyze the impact of region and product on revenue.
+
+#### Pivot Tables
+1. **Sales Data**:
+   - Created pivot tables for revenue by region, revenue by product, quantity sold by region, monthly sales trends for different years, and top-selling products.
+   - Additional insights included average revenue per order, total orders per region, and sales performance comparison across different time periods.
+2. **Customer Data**:
+   - Created pivot tables for the sum of subscription types by region, revenue by subscription type, sum of true and false canceled subscriptions, and highest revenue by customer.
+   - Additional insights included customer retention rates, average subscription duration, and revenue trends over subscription periods.
+
+### SQL
+
+#### Database Creation
+1. **Create Databases**: I created separate databases for the sales and customer datasets.
+2. **Import Data**: Imported the capstone datasets from Excel into SQL.
+
+#### Data Cleaning
+1. **Remove Duplicates**: Wrote SQL queries to remove duplicates from the datasets.
+2. **Correct Data Types**: Ensured that all columns had the correct data types.
+3. **Handle Null Values**: Wrote queries to handle null values appropriately.
+
+#### Exploratory Data Analysis (EDA)
+1. **Sales Data**:
+   - Wrote queries to extract key insights based on the following questions:
+     - Retrieve the total sales for each product category.
+     - Find the number of sales transactions in each region.
+     - Identify the highest-selling product by total sales value.
+     - Calculate total revenue per product.
+     - Calculate monthly sales totals for the current year.
+     - Find the top 5 customers by total purchase amount.
+     - Calculate the percentage of total sales contributed by each region.
+     - Identify products with no sales in the last quarter.
+2. **Customer Data**:
+   - Wrote queries to extract key insights based on the following questions:
+     - Retrieve the total number of customers from each region.
+     - Find the most popular subscription type by the number of customers.
+     - Identify customers who canceled their subscription within 6 months.
+     - Calculate the average subscription duration for all customers.
+     - Find customers with subscriptions longer than 12 months.
+     - Calculate total revenue by subscription type.
+     - Find the top 3 regions by subscription cancellations.
+     - Find the total number of active and canceled subscriptions.
+
+#### Visualization Preparation
+1. **Export Data**: Exported cleaned and aggregated data for visualization in Power BI.
+
+### Power BI
+
+### Data Import and Transformation
+1. **Import Data**: Imported data from Excel into Power BI.
+2. **Transform Data**: Used Power Query Editor to clean and transform the data.
+   - For sales data, generated revenue by multiplying the Quantity column by the Unit Sold column.
+   - Checked for column consistency, including column quality, distribution, and profile.
+
+### Measure Creation
+1. **Sales Data**:
+   - Created measures like total revenue and count of customers.
+2. **Customer Data**:
+   - Created a conditional column (cancellation count) for canceled subscriptions based on true or false values.
+   - Created several measures such as cancellation rate and total number of customers.
+
+### Dashboard Creation
+1. **Sales Data**:
+   - Built a Power BI dashboard that visualizes the insights found in Excel and SQL.
+   - Included a sales overview, top-performing products, and regional breakdowns.
+2. **Customer Data**:
+   - Built a dashboard that visualizes key customer segments, cancellations, and subscription trends.
+   - Included slicers for interactive analysis.
+
+### Conclusion
+This repository showcases my ability to clean, analyze, and visualize data using Excel, SQL, and Power BI. It includes detailed steps for each tool, highlighting my proficiency in data cleaning, exploratory data analysis, and creating compelling visualizations and dashboards. The project demonstrates my comprehensive understanding of data analysis techniques and my ability to apply them to real-world datasets.
