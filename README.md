@@ -1,4 +1,4 @@
-![Screenshot (170)](https://github.com/user-attachments/assets/2eb6ce8e-4677-4685-85c5-79adf4e134a8)![Screenshot (137)](https://github.com/user-attachments/assets/a5133edf-4bbb-4d5f-af3c-1f3ebe1cd1c5)# LITA_Class_Portfolio
+# LITA_Class_Portfolio
 
 ## Project Title: Comprehensive Data Analysis Journey 
 
