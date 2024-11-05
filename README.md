@@ -583,6 +583,7 @@ FROM[dbo].[Sales_Data]
 WHERE ORDERYEAR = 2024
 GROUP BY ORDERMONTH_
 ```
+![Screenshot (248)](https://github.com/user-attachments/assets/08715830-9c81-4e29-bde5-9752582536ad)
 
   - Find the top 5 customers by total purchase amount.
 ```
@@ -591,6 +592,7 @@ FROM [dbo].[Sales_Data]
 GROUP BY Customer_Id
 ORDER BY TOP_5_BY_QUANTITY_PURCHASED DESC
 ```
+![Screenshot (247)](https://github.com/user-attachments/assets/21cf9465-f5a2-4c3d-b85c-f8d3745ea174)
 
   - Calculate the percentage of total sales contributed by each region.
 ```
@@ -599,8 +601,9 @@ FROM  [dbo].[Sales_Data]
 GROUP BY Region 
 ORDER BY Percentage_of_Total_Sales 
 ```
+![Screenshot (249)](https://github.com/user-attachments/assets/760282b8-d14a-4eff-9e8f-85aa334e0d49)
 
-  - Identify products with no sales in the last quarter.
+  - Identify products with no sales in the last quarter. This reveal that there is no region with no sales in the last 3 quarter
 ```
 SELECT Product, sum (Quantity) as No_Sales_in_Last_Quarter
 FROM [dbo].[Sales_Data]
@@ -608,6 +611,7 @@ where OrderDate >= '2024-06-01'
 group by Product
 having sum (Quantity) = 0
 ```
+![Screenshot (251)](https://github.com/user-attachments/assets/d045f268-d253-49ea-bc0c-95aad3829ebc)
 
 2. **Customer Data**:
 - Wrote queries to extract key insights based on the following questions:
@@ -682,9 +686,7 @@ GROUP BY SUBSCRIPTION_TYPE
 ### Power BI
 #### Data Import and Transformation
 1. **Import Data**: Imported data from Excel into Power BI.
-2. **Transform Data**: Used Power Query Editor to clean and transform the data.
-   - For sales data, generated revenue by multiplying the Quantity column by the Unit Sold column.
-   - Checked for column consistency, including column quality, distribution, and profile.
+2. **Transform Data**: to checked for column consistency, including column quality, distribution, and profile.
 
 #### Measure Creation
 1. **Sales Data**:
