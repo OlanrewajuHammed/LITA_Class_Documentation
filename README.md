@@ -1,4 +1,4 @@
-# LITA_Class_Portfolio
+![Screenshot (170)](https://github.com/user-attachments/assets/2eb6ce8e-4677-4685-85c5-79adf4e134a8)![Screenshot (137)](https://github.com/user-attachments/assets/a5133edf-4bbb-4d5f-af3c-1f3ebe1cd1c5)# LITA_Class_Portfolio
 
 ## Project Title: Comprehensive Data Analysis Journey 
 
@@ -59,6 +59,7 @@ The tools used include
    - Used for Database management and querying.
 5. **Power BI**:[Download Here](https://www.microsoft.com/en-us/power-platform/products/power-bi/downloads)
    - Used for data visualization and dashboard creation.
+
 
 ## Excel
 ---
@@ -306,43 +307,73 @@ Actions perform in this phase include importing of data from different sources a
 |---------|---------|---------|---------|---------|---------|
 |Name|Gender|marital status|level of education|Email address|hiredate|
 
+![Screenshot (5)](https://github.com/user-attachments/assets/afa9c0eb-5fa4-4c8e-9d70-33c68f9bec9f)
+
 
 3. Data transformation: where data cleaning is carried out. Actions include
    - Transposing data, removing specific column and rows, promoting header, correcting datatype etc..
+
+![Screenshot (17)](https://github.com/user-attachments/assets/a0cf3035-3aa4-4014-8633-86cf8f0014c0)
 
 4. Sorting data by delimeter: used for
    - splitting a column into columns
    - sorting data in ascending or descending order
 
+![Screenshot (22)](https://github.com/user-attachments/assets/f45fec47-09f2-4362-b851-27d55f9985d2)
+
 5. Checking for Data consistency previewing 
    - column quality, column distribution, column profile
-  
+
+![Screenshot (27)](https://github.com/user-attachments/assets/4e685d2e-152e-44e0-839f-4eb50aaeb37a)
+
 6. Appending and merging colunm of similar dataset
    - Append add data to row
    - merging add to column
 
+![Screenshot (40)](https://github.com/user-attachments/assets/0afa010d-03d2-49b3-a19f-1fb8041bc9b4)
+
 7. Chaging text case and merging columns using
    - Upper,proper and lower function
    - concatenate to merge 
-  
+
+![Screenshot (123)](https://github.com/user-attachments/assets/ac105ebb-8970-4697-9e51-7f30af13f854)
+
 ### Report and Dashboard 
 This phase require creating some calculated and conditional column to enable proper visualization 
 1. **Creating *measure* (Analytic Expression)**: to create a single desired value from entire table.
-   
+![Screenshot (170)](https://github.com/user-attachments/assets/45f0c56f-c64e-4f05-a2a5-94b6d36ac1fb)
+
 2. **Creating conditional column**: representing unique row name by number, numbers by text
-
-If Job satisfaction = 1 --> Satisfied 
+```
+If Region = South West --> 1
+Else if Region = South East --> 2
+Else if Region = South South --> 3
+Else if Region = North Central --> 4
+Else if Region = North East --> 5
 Else
-Unsatisfied 
+6
+```
 
+![Screenshot (133)](https://github.com/user-attachments/assets/a1a145c7-a7dc-443a-9058-f672fbe35d39)
 
-3.  **Visualization**: This part consist of building visuals and formatibg visuals for efficient presentation of findings. Visuals are presented on
-   - bar chart: to check particular dimension against period or value
-   - doughnut: check ratio of entities 
-   - map: to visualize real life location of desired entity
-   - Q & A: To know count by yes or no true or false 
-   - slicer: using particular entity to look around data
-   - matrix: showing entities of calculated column and other desired columns
+3.  **Visualization**: This part consist of building visuals and formating (beautifying and modifying) visuals view for efficient presentation of findings. Visuals are presented on
+- card: use to display aggregate from created measure
+![Screenshot (135)](https://github.com/user-attachments/assets/c9368a59-d12b-492d-9e07-d1ced15160b5)
+![Screenshot (140)](https://github.com/user-attachments/assets/059dd112-c2de-4136-ad2b-1b2ffbb5e11f)
+
+- bar chart: to check particular dimension against period or value
+- doughnut: check ratio of entity by other entity (Legend)
+- map: to visualize real life location of desired entity
+![Screenshot (145)](https://github.com/user-attachments/assets/f508a8e7-e640-4432-9151-c8454696decd)
+
+- Q & A: To know count by yes or no true or false
+![Screenshot (153)](https://github.com/user-attachments/assets/6bcb0e21-6984-4e7b-b4b2-9b22b226617c)
+
+- slicer: using particular entity to look around data
+![Screenshot (175)](https://github.com/user-attachments/assets/4812fef8-81f1-4a42-adfd-7e538cc71b95)
+
+- matrix: showing entities of calculated column and other desired columns
+![Screenshot (183)](https://github.com/user-attachments/assets/4ddf7548-4da1-43e8-838f-1e8261c24bfb)
 
 ### Exploratory Data Analysis
 In this EDA we were able to visualiza proper adequate finding to answer questions and show trends 
@@ -350,6 +381,8 @@ In this EDA we were able to visualiza proper adequate finding to answer question
 2. Product distribution by region using the map
 3. Njmber of current employees by gender
 4. Job role by job satisfactory level
+
+![Screenshot (182)](https://github.com/user-attachments/assets/c68c7f22-f21f-45c0-aa81-642688e40525)
 
 ### Summary
 In this repository, I document my journey of mastering Power BI, a powerful tool for data visualization and business analytics. Throughout this course, I have learned to navigate the Power BI interface, transform and clean data using the Power Query Editor, and create a variety of visualizations. I have also developed skills in building interactive dashboards that consolidate data insights and facilitate informed decision-making. This repository serves as a comprehensive guide, showcasing my progress and the practical applications of Power BI in data analysis.
