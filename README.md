@@ -396,21 +396,65 @@ This repository documents my work on a capstone project designed to assess my sk
 ### Excel
 #### Data Cleaning
 1. **Remove Duplicates**: The first step was to remove duplicates from both datasets to ensure data integrity. This was done using the "Remove Duplicates" feature in Excel.
+![Screenshot (229)](https://github.com/user-attachments/assets/3c8f322b-128b-4fcf-87bc-aeff412bd5aa)
+![Screenshot (237)](https://github.com/user-attachments/assets/3d5e162e-f561-43e6-9a77-7655080ab2b4)
+
+
 2. **Generate Revenue Column**: For the sales data, I generated a revenue column by multiplying the Quantity column by the Unit Sold column.
+```
+=F28*G2
+``
+![Screenshot (231)](https://github.com/user-attachments/assets/fba6696f-7d9a-4d67-90e0-4b17838438fc)
+
 3. **Validate Columns**: I validated the columns to ensure data consistency and accuracy. This involved checking for any inconsistencies or errors in the data.
+
+![Screenshot (232)](https://github.com/user-attachments/assets/8f1c6346-9150-4aaa-9de8-078ad37d0d69)
+
 4. **Create Drop-Down Lists**: To standardize data entries, I created drop-down lists for certain columns, such as Product and Region.
+
+![Screenshot (236)](https://github.com/user-attachments/assets/6467bf44-df60-48f2-9bb8-03a13c9a7335)
 
 #### Aggregations
 1. **Aggregate Functions**: In a separate worksheet, I performed various aggregations using functions like `SUM`, `AVERAGE`, `MAX`, `MIN`, and `COUNT`.
+
+```
+= MAX(REVENUE)
+``
+![Screenshot (226)](https://github.com/user-attachments/assets/1065bbce-2245-4042-bec3-9ef6ba252e25)
+
 2. **Conditional Columns**: I calculated conditional columns using functions like `SUMIF`, `AVERAGEIF`, `COUNTIF`, and `IFS` to analyze the impact of region and product on revenue.
+```
+=AVERAGEIF ('Customer Data'!D2:D33788,'Customer Data'!D2,'Customer Data'!H2:H33788)
+```
+![Screenshot (220)](https://github.com/user-attachments/assets/0e978906-2a5c-459a-9383-bcc5819ba70e)
+![Screenshot (233)](https://github.com/user-attachments/assets/1f8e5dbc-bd36-4f19-b3ba-c4f990bedda5)
 
 #### Pivot Tables
-1. **Sales Data**:
-   - Created pivot tables for revenue by region, revenue by product, quantity sold by region, monthly sales trends for different years, and top-selling products.
-   - Additional insights included average revenue per order, total orders per region, and sales performance comparison across different time periods.
-2. **Customer Data**:
-   - Created pivot tables for the sum of subscription types by region, revenue by subscription type, sum of true and false canceled subscriptions, and highest revenue by customer.
-   - Additional insights included customer retention rates, average subscription duration, and revenue trends over subscription periods.
+1. **Sales Data**: Created pivot tables for
+- revenue by product, Rank of revenue by product
+- Regional performance,
+- Product sale by region
+- Highest quantity sold by region,
+- monthly sales trends for different years and region,
+- monthly sales trends for different years and product
+![Screenshot (221)](https://github.com/user-attachments/assets/b5d080ec-763f-4303-9a4e-f079c610f287)
+![Screenshot (222)](https://github.com/user-attachments/assets/671905b0-7809-41f2-9980-0eb8a380fba4)
+![Screenshot (223)](https://github.com/user-attachments/assets/686d5dd3-0738-4cbf-8028-825254d5c992)
+
+3. **Customer Data**: Created pivot tables for 
+- revenue by region,
+- revenue by subscription type
+- count of customers by region and subscription type,
+- trend of subscription per region by year
+- revenue by cancellation per subscription type
+- revenue by region and subscription type
+- top 10  revenue by customers name and subscription type
+- highest revenue by customer name per region
+- Monthly sale trend by region
+![Screenshot (227)](https://github.com/user-attachments/assets/f370b741-8742-4ec5-ba53-65ad11af50d0)
+![Screenshot (228)](https://github.com/user-attachments/assets/0081fee5-4a88-4224-b9fb-9f3a1e6bb881)
+d-c![Screenshot (240)](https://github.com/user-attachments/assets/9b44897e-7150-46e1-8b39-717e46621846)
+19d34463c96)
 
 ### SQL
 #### Database Creation
