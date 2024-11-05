@@ -1,6 +1,6 @@
-I'm# LITA_Class_Portfolio
+# LITA_Class_Portfolio
 
-## Project Title: Comprehensive Data Analysis
+## Project Title: Comprehensive Data Analysis Journey 
 
 [Project Overview](#project-overview)
 
@@ -20,11 +20,13 @@ I'm# LITA_Class_Portfolio
 - [Introduction to SQL](#introduction-to-sql)
 - [Basic SQL Queries](#basic-sql-queries)
 - [Exploratory Data Analysis](#exploratory-data-analysis)
+- [Summary](#summary)
 
 [Power BI](#power-bi)
 - [Introduction into Power BI](#introduction-into-power-bi)
+- [Data Transformation](#data-transformation)
+- [Report and Dashboard](#report-and-dashboard) 
 - [Exploratory Data Analysis](#exploratory-data-analysis)
-- [Report and Dashboard](#report-and-dashboard)
 - [Summary](#summary)
 
 [Capstone Project](#capstone-project)
@@ -47,11 +49,11 @@ The data used in these projects were sourced from a variety of locations includi
 
 ### Tools used
 The tools used include 
-1. Microsoft Excel: [Download Here](https://www.microsoft.com/en-us/microsoft-365/excel?ocid=ORSEARCH_Bing&msockid=31ccbb7207cd643010e1ae7e060d65f3)
+1. **Microsoft Excel**: [Download Here](https://www.microsoft.com/en-us/microsoft-365/excel?ocid=ORSEARCH_Bing&msockid=31ccbb7207cd643010e1ae7e060d65f3)
    - Used for Data cleaning, analysis, and basic visualization.
-3. SQL Server: [Download Here](https://www.microsoft.com/en-us/sql-server/sql-server-downloads?msockid=31ccbb7207cd643010e1ae7e060d65f3)
+3. **SQL Server**: [Download Here](https://www.microsoft.com/en-us/sql-server/sql-server-downloads?msockid=31ccbb7207cd643010e1ae7e060d65f3)
    - Used for Database management and querying.
-5. Power BI:[Download Here](https://www.microsoft.com/en-us/power-platform/products/power-bi/downloads)
+5. **Power BI**:[Download Here](https://www.microsoft.com/en-us/power-platform/products/power-bi/downloads)
    - Used for data visualization and dashboard creation.
 
 ## Excel
@@ -65,9 +67,9 @@ Here our facilitator took us through microsoft excel where we navigate the follo
 
 ### Foundation of Data
 This phase serve as an insight to enhance our excel journey, we were introduced to the following:
- 1. Data Literacy: which encompasses
+ 1. **Data Literacy**: which encompasses
 - Data Generation, Data storage, Data Stucture, Statistic, Data Driven Decision Making
-2. Data Analysis Life Cycle: which include  
+2. **Data Analysis Life Cycle**: which include  
 - Ingestion, Transformation, Modeling, Visualization, Analysis, Presentation
   
 ### Introduction into Microsoft Excel
@@ -91,7 +93,7 @@ The aim of this phase was to perform data manipulation tasks in other to answer 
 ```
 ![Screenshot (73)](https://github.com/user-attachments/assets/dfc5faaa-04de-4a15-b62a-83018e5ee73f)
 
-2. conditional funtions; to specify answe if a particular condition is met
+2. conditional funtions; to specify answer if a particular condition is met
    - Sumif(s), Averageif(s), Maxifs, Maxa , Minifs, Countif(s), If(s) 
 ```
 =COUNTIF(C8:C27,C19)
@@ -290,7 +292,7 @@ This phase expantiate the what the tool entails and its working system which inc
      - bar chat, histogram, map, table etc.
 4. Principles of data visualization: enumerating steps to proper decision making
 
-### Data Transformer 
+### Data Transformation 
 Actions perform in this phase include importing of data from different sources and building visualization to show compelling result
 1. Generating real life dataset from class and importing data from different sources
 
