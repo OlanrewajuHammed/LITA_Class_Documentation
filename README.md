@@ -415,18 +415,37 @@ This repository documents my work on a capstone project designed to assess my sk
 ![Screenshot (236)](https://github.com/user-attachments/assets/6467bf44-df60-48f2-9bb8-03a13c9a7335)
 
 #### Aggregations
-1. **Aggregate Functions**: In a separate worksheet, I performed various aggregations using functions like `SUM`, `AVERAGE`, `MAX`, `MIN`, and `COUNT`.
-
+1. **Aggregate Functions**: I performed various aggregations for both data using functions like
+ - `SUM` to calculate overall revenue
+ - `AVERAGE` to calculate average revenue
+ - `MAX` to calculate maximum revenue
+ - `MIN` to calculate minimum revenue and
+ - `COUNT` to calculate count customers 
 ```
-= MAX(REVENUE)
-``
+=SUM('Customer Data'!H2:H33788)
+```
+```
+= =SUM('Sales Data'!J2:J9922)
+```
+![Screenshot (241)](https://github.com/user-attachments/assets/e4b37fa6-0b90-4193-acd2-642c896c3081)
+
 ![Screenshot (226)](https://github.com/user-attachments/assets/1065bbce-2245-4042-bec3-9ef6ba252e25)
 
-2. **Conditional Columns**: I calculated conditional columns using functions like `SUMIF`, `AVERAGEIF`, `COUNTIF`, and `IFS` to analyze the impact of region and product on revenue.
+2. **Conditional Columns**: I calculated conditional columns using functions to analyze the impact of region and product on revenue.
+- **Sales data**
+   - `SUMIF`for overall revenue and product sold by product and region 
+   - `AVERAGEIF` for average revenue product and region
+   - `COUNTIF`count of product by region
+   - `IFS`to create sales Category
 ```
 =AVERAGEIF ('Customer Data'!D2:D33788,'Customer Data'!D2,'Customer Data'!H2:H33788)
 ```
 ![Screenshot (220)](https://github.com/user-attachments/assets/0e978906-2a5c-459a-9383-bcc5819ba70e)
+
+- **Customers data**
+ - `SUMIF`for overall revenue by subscription type and region 
+   - `AVERAGEIF` for average revenue product and region
+   - `COUNTIF`count of product by region
 ![Screenshot (233)](https://github.com/user-attachments/assets/1f8e5dbc-bd36-4f19-b3ba-c4f990bedda5)
 
 #### Pivot Tables
@@ -437,8 +456,11 @@ This repository documents my work on a capstone project designed to assess my sk
 - Highest quantity sold by region,
 - monthly sales trends for different years and region,
 - monthly sales trends for different years and product
+
 ![Screenshot (221)](https://github.com/user-attachments/assets/b5d080ec-763f-4303-9a4e-f079c610f287)
+
 ![Screenshot (222)](https://github.com/user-attachments/assets/671905b0-7809-41f2-9980-0eb8a380fba4)
+
 ![Screenshot (223)](https://github.com/user-attachments/assets/686d5dd3-0738-4cbf-8028-825254d5c992)
 
 3. **Customer Data**: Created pivot tables for 
@@ -451,36 +473,142 @@ This repository documents my work on a capstone project designed to assess my sk
 - top 10  revenue by customers name and subscription type
 - highest revenue by customer name per region
 - Monthly sale trend by region
+
 ![Screenshot (227)](https://github.com/user-attachments/assets/f370b741-8742-4ec5-ba53-65ad11af50d0)
+
 ![Screenshot (228)](https://github.com/user-attachments/assets/0081fee5-4a88-4224-b9fb-9f3a1e6bb881)
-d-c![Screenshot (240)](https://github.com/user-attachments/assets/9b44897e-7150-46e1-8b39-717e46621846)
+
+![Screenshot (240)](https://github.com/user-attachments/assets/9b44897e-7150-46e1-8b39-717e46621846)
 19d34463c96)
 
 ### SQL
-#### Database Creation
-1. **Create Databases**: I created separate databases for the sales and customer datasets.
-2. **Import Data**: Imported the capstone datasets from Excel into SQL.
+I Imported the capstone data with duplicate and perform the following actions:
 
 #### Data Cleaning
-1. **Remove Duplicates**: Wrote SQL queries to remove duplicates from the datasets.
-2. **Correct Data Types**: Ensured that all columns had the correct data types.
-3. **Handle Null Values**: Wrote queries to handle null values appropriately.
+**Correct Data Types**: Ensured that all columns had the correct data types.
+**Handle Null Values**: Wrote queries to handle null values appropriately.
+
+#### Database Creation
+1. **Create Databases**: I created a databases for the sales and customer datasets uing the followin query
+```
+create database Capstone_project
+```
+
+2. **Import Data**: Imported the capstone datasets from Excel into SQL.
+
+![Screenshot (185)](https://github.com/user-attachments/assets/5707972a-1cec-4ef1-812e-5025db1ed50f)
+
+3. **Create table**: I created tables for the sales and customer datasets uing the followin query
+```
+select * from [dbo].[Sales_Data]
+```
+```
+SELECT * FROM [dbo].[Customers Data]
+```
+4. **Created a revenue column for sales data using
+```
+Alter table [dbo].[Sales_Data]
+add Revenue int  
+update[dbo].[Sales_Data] 
+set revenue = (quantity * unitprice)
+```
 
 #### Exploratory Data Analysis (EDA)
 1. **Sales Data**:
-- Wrote queries to extract key insights based on the following questions:
+- I Wrote queries to extract key insights based on the following questions:
   - Retrieve the total sales for each product category.
+```
+SELECT product, sum (revenue) as Total_sales_by_product
+from[dbo].[Sales_Data]
+group by Product
+```
+
   - Find the number of sales transactions in each region.
+```
+SELECT Region, sum (quantity) as Number_of_Sales_Transactions 
+from[dbo].[Sales_Data]
+group by Region
+```
+
   - Identify the highest-selling product by total sales
+```
+SELECT product, sum (Revenue) as Total_sales 
+from[dbo].[Sales_Data]
+group by Product
+order by Total_sales desc
+```
+
   - Calculate total revenue per product.
+```
+SELECT product, sum (revenue) as Total_revenue_by_product
+from[dbo].[Sales_Data]
+group by Product
+```
+
+To calculate the next question i modified table by creating conditions
+```
+ALTER TABLE [dbo].[Sales_Data]
+ADD OrderMonth_ nvarchar(50) 
+
+UPDATE [dbo].[Sales_Data]
+SET OrderMonth_ = DATENAME (MONTH, OrderDate) 
+ 
+ALTER TABLE [dbo].[Sales_Data]
+ADD OrderYear int 
+
+UPDATE  [dbo].[Sales_Data]
+SET OrderYear = Year(OrderDate)
+```
+
   - Calculate monthly sales totals for the current year.
+```
+select ORDERMONTH_, SUM (Quantity) as Montly_sales_For_current_Year 
+FROM[dbo].[Sales_Data]
+WHERE ORDERYEAR = 2024
+GROUP BY ORDERMONTH_
+```
+
   - Find the top 5 customers by total purchase amount.
+```
+SELECT top 5 Customer_Id,SUM (QUANTITY) AS TOP_5_BY_QUANTITY_PURCHASED
+FROM [dbo].[Sales_Data]
+GROUP BY Customer_Id
+ORDER BY TOP_5_BY_QUANTITY_PURCHASED DESC
+```
+
   - Calculate the percentage of total sales contributed by each region.
+```
+SELECT Region, SUM(Revenue)/SUM(Quantity)*0.1 AS Percentage_of_Total_Sales 
+FROM  [dbo].[Sales_Data]
+GROUP BY Region 
+ORDER BY Percentage_of_Total_Sales 
+```
+
   - Identify products with no sales in the last quarter.
+```
+SELECT Product, sum (Quantity) as No_Sales_in_Last_Quarter
+FROM [dbo].[Sales_Data]
+where OrderDate >= '2024-06-01'
+group by Product
+having sum (Quantity) = 0
+```
+
 2. **Customer Data**:
 - Wrote queries to extract key insights based on the following questions:
   - Retrieve the total number of customers from each region.
+```
+SELECT REGION, COUNT (CUSTOMERID) AS NUMBER_OF_CUSTOMERS_BY_REGION
+FROM [dbo].[Customers Data]
+GROUP BY REGION
+```
+SELECT SUBSCRIPTION_TYPE, COUNT (CUSTOMERID) AS NUMBERS_OF_CUSTOMERS
+FROM [dbo].[Customers Data]
+GROUP BY SUBSCRIPTION_TYPE
+```
+
   - Find the most popular subscription type by the number of customers.
+```
+
   - Identify customers who canceled their subscription within 6 months.
   - Calculate the average subscription duration for all customers.
   - Find customers with subscriptions longer than 12 months.
