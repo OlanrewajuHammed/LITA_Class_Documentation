@@ -396,6 +396,7 @@ This repository documents my work on a capstone project designed to assess my sk
 ### Excel
 #### Data Cleaning
 1. **Remove Duplicates**: The first step was to remove duplicates from both datasets to ensure data integrity. This was done using the "Remove Duplicates" feature in Excel.
+
 ![Screenshot (229)](https://github.com/user-attachments/assets/3c8f322b-128b-4fcf-87bc-aeff412bd5aa)
 ![Screenshot (237)](https://github.com/user-attachments/assets/3d5e162e-f561-43e6-9a77-7655080ab2b4)
 
@@ -403,7 +404,7 @@ This repository documents my work on a capstone project designed to assess my sk
 2. **Generate Revenue Column**: For the sales data, I generated a revenue column by multiplying the Quantity column by the Unit Sold column.
 ```
 =F28*G2
-``
+```
 ![Screenshot (231)](https://github.com/user-attachments/assets/fba6696f-7d9a-4d67-90e0-4b17838438fc)
 
 3. **Validate Columns**: I validated the columns to ensure data consistency and accuracy. This involved checking for any inconsistencies or errors in the data.
@@ -481,6 +482,7 @@ This repository documents my work on a capstone project designed to assess my sk
 ![Screenshot (240)](https://github.com/user-attachments/assets/9b44897e-7150-46e1-8b39-717e46621846)
 19d34463c96)
 
+
 ### SQL
 I Imported the capstone data with duplicate and perform the following actions:
 
@@ -502,9 +504,13 @@ create database Capstone_project
 ```
 select * from [dbo].[Sales_Data]
 ```
+![Screenshot (186)](https://github.com/user-attachments/assets/cb736c26-bd04-4076-ae89-71ea24dfcdd7)
+
 ```
 SELECT * FROM [dbo].[Customers Data]
 ```
+![Screenshot (193)](https://github.com/user-attachments/assets/8783f306-b486-426c-8f2f-5f5605af62d1)
+
 4. **Created a revenue column for sales data using
 ```
 Alter table [dbo].[Sales_Data]
@@ -512,6 +518,10 @@ add Revenue int
 update[dbo].[Sales_Data] 
 set revenue = (quantity * unitprice)
 ```
+![Screenshot (187)](https://github.com/user-attachments/assets/fe3a3ee2-37b0-4cc0-ad90-039eb3becf48)
+
+5. Calculated total revenue generated for accuracy
+![Screenshot (188)](https://github.com/user-attachments/assets/75c94090-4d1a-49ce-958c-cd67215e00fb)
 
 #### Exploratory Data Analysis (EDA)
 1. **Sales Data**:
@@ -522,6 +532,8 @@ SELECT product, sum (revenue) as Total_sales_by_product
 from[dbo].[Sales_Data]
 group by Product
 ```
+![Screenshot (189)](https://github.com/user-attachments/assets/860c8fda-d88c-44ea-b457-d9388f6fe8e7)
+
 
   - Find the number of sales transactions in each region.
 ```
@@ -529,6 +541,7 @@ SELECT Region, sum (quantity) as Number_of_Sales_Transactions
 from[dbo].[Sales_Data]
 group by Region
 ```
+![Screenshot (190)](https://github.com/user-attachments/assets/d9774041-3131-400c-8ae6-27020a226f8d)
 
   - Identify the highest-selling product by total sales
 ```
@@ -537,6 +550,8 @@ from[dbo].[Sales_Data]
 group by Product
 order by Total_sales desc
 ```
+![Screenshot (191)](https://github.com/user-attachments/assets/ec879833-c715-4259-ab71-1d0881530380)
+
 
   - Calculate total revenue per product.
 ```
@@ -545,7 +560,7 @@ from[dbo].[Sales_Data]
 group by Product
 ```
 
-To calculate the next question i modified table by creating conditions
+**To calculate the next question i modified table by creating conditions**
 ```
 ALTER TABLE [dbo].[Sales_Data]
 ADD OrderMonth_ nvarchar(50) 
@@ -559,6 +574,7 @@ ADD OrderYear int
 UPDATE  [dbo].[Sales_Data]
 SET OrderYear = Year(OrderDate)
 ```
+![Screenshot (192)](https://github.com/user-attachments/assets/f589b36b-ccb4-45a3-94cf-a3fe5d1da2a3)
 
   - Calculate monthly sales totals for the current year.
 ```
@@ -601,23 +617,66 @@ SELECT REGION, COUNT (CUSTOMERID) AS NUMBER_OF_CUSTOMERS_BY_REGION
 FROM [dbo].[Customers Data]
 GROUP BY REGION
 ```
+![Screenshot (195)](https://github.com/user-attachments/assets/6d476774-0d34-4d91-989f-5d79f5884eac)
+
+  - Find the most popular subscription type by the number of customers.
+```
 SELECT SUBSCRIPTION_TYPE, COUNT (CUSTOMERID) AS NUMBERS_OF_CUSTOMERS
 FROM [dbo].[Customers Data]
 GROUP BY SUBSCRIPTION_TYPE
 ```
-
-  - Find the most popular subscription type by the number of customers.
-```
+![Screenshot (196)](https://github.com/user-attachments/assets/26f289b4-3870-4f6c-9c86-1d459217db25)
 
   - Identify customers who canceled their subscription within 6 months.
-  - Calculate the average subscription duration for all customers.
+```
+select Customer_Name,Canceled, Subscription_Start
+from [dbo].[Customers Data]
+WHERE month (Subscription_Start) <= 6 and canceled = 'true'
+```
+![Screenshot (197)](https://github.com/user-attachments/assets/a7097b50-1dbb-408f-8ffb-b8b123ffde9a)
+
+ - Calculate the average subscription duration for all customers.
+SELECT Count(CustomerID) As All_Customers,
+select AVG(DATEDIFF(DAY,subscriptionstart,SubscriptionEnd)) AS Average_Subscription_Duration 
+FROM  [dbo].[Sales_Data]
+WHERE SubscriptionEnd not null
+```
+
   - Find customers with subscriptions longer than 12 months.
+```
+select Customer_Name,Subscription_Type, Subscription_Start, Subscription_End
+from [dbo].[Customers Data]
+WHERE DATEDIFF (month,Subscription_Start,Subscription_End) >= 12
+```
+![Screenshot (198)](https://github.com/user-attachments/assets/017926c2-2753-4782-ad31-cb4e0884a242)
+
   - Calculate total revenue by subscription type.
+```
+SELECT Subscription_Type, SUM (REVENUE) AS TOTAL_REVENUE
+FROM [dbo].[Customers Data]
+GROUP BY Subscription_Type
+```
+![Screenshot (200)](https://github.com/user-attachments/assets/c384112b-6645-49b5-b0bc-befb78802346)
+
   - Find the top 3 regions by subscription cancellations.
+```
+SELECT TOP 3 REGION, CANCELED
+FROM [dbo].[Customers Data]
+WHERE Canceled = 'TRUE'
+```
+![Screenshot (201)](https://github.com/user-attachments/assets/6826cd36-58a0-44cf-9c24-83150bec534f)
+
   - Find the total number of active and canceled subscriptions.
+```
+SELECT CANCELED FROM [Customers Data]
+COUNT
+ (CASE WHEN STATUS = 'TRUE' THEN 1 ELSE 0 END) AS CANCELED_SUBSCRIPTION,
+ COUNT (CASE WHEN STATUS = 'FALSE' THEN 1 ELSE 0 END) AS ACTIVE_SUBSCRIPTION
+GROUP BY SUBSCRIPTION_TYPE
+```
 
 #### Visualization Preparation
-1. **Export Data**: Exported cleaned and aggregated data for visualization in Power BI.
+1. **Export Data**: I exported cleaned and aggregated data for visualization in Power BI.
 
 ### Power BI
 #### Data Import and Transformation
